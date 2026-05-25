@@ -1,0 +1,14 @@
+{
+  "name": "collision-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:frontend": "npm run dev --workspace=packages/frontend",
+    "dev:desktop": "npm run dev --workspace=apps/desktop-host",
+    "clean": "rm -rf node_modules packages/frontend/node_modules apps/desktop-host/node_modules package-lock.json"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
