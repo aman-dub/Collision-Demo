@@ -274,7 +274,7 @@ export default function App() {
   }, []);
   const playerRef = useRef<PlayerRef>(null);
   const broadcastChannel = useRef<BroadcastChannel | null>(null);
-  const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const _fileInputRef = useRef<HTMLInputElement | null>(null);
   const noteFileInputRef = useRef<HTMLInputElement | null>(null);
   
   const [focusedLyricText, setFocusedLyricText] = useState<{ id: string, text: string } | null>(null);
@@ -287,7 +287,7 @@ export default function App() {
   } | null>(null);
   const [modalInput, setModalInput] = useState('');
   const [inviteRole, setInviteRole] = useState<'Editor' | 'Viewer'>('Editor');
-  const [inviteLink, setInviteLink] = useState('');
+  const [_inviteLink, setInviteLink] = useState('');
   const [selectedInviteUser, setSelectedInviteUser] = useState<string>('u2');
   
   const [editingProjectId, setEditingProjectId] = useState<string | null>(null);
